@@ -43,6 +43,7 @@ html.sticky-header-active #header .header-body {
 
 .home-hero-slider::before {
 	top: 0;
+	height: 3px;
 }
 
 .home-hero-slider::after {
@@ -80,8 +81,38 @@ html.sticky-header-active #header .header-body {
 }
 
 @media (max-width: 767px) {
+	.home-hero-slider,
+	.home-hero-slider .rev_slider,
+	.home-hero-slider + .tp-fullwidth-forcer,
+	.main > .forcefullwidth_wrapper_tp_banner {
+		height: 430px !important;
+	}
+
 	.home-slider-btn {
 		min-width: 140px;
 		padding: 12px 15px !important;
+	}
+
+	.home-hero-slider .tparrows {
+		height: 44px !important;
+		width: 44px !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.home-hero-slider,
+	.home-hero-slider .rev_slider,
+	.home-hero-slider + .tp-fullwidth-forcer,
+	.main > .forcefullwidth_wrapper_tp_banner {
+		height: 540px !important;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.home-hero-slider,
+	.home-hero-slider .rev_slider,
+	.home-hero-slider + .tp-fullwidth-forcer,
+	.main > .forcefullwidth_wrapper_tp_banner {
+		height: 620px !important;
 	}
 }
