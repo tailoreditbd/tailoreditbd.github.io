@@ -85,17 +85,24 @@ html.sticky-header-active #header .header-body {
 	.home-hero-slider .rev_slider,
 	.home-hero-slider + .tp-fullwidth-forcer,
 	.main > .forcefullwidth_wrapper_tp_banner {
-		height: 430px !important;
+		height: 560px !important;
 	}
 
 	.home-slider-btn {
 		min-width: 140px;
 		padding: 12px 15px !important;
+		text-align: center !important;
 	}
 
 	.home-hero-slider .tparrows {
-		height: 44px !important;
-		width: 44px !important;
+		display: none !important;
+	}
+
+	.home-hero-slider .slotholder .defaultimg,
+	.home-hero-slider .slotholder .slotslide {
+		background-position: center top !important;
+		background-repeat: no-repeat !important;
+		background-size: contain !important;
 	}
 }
 
