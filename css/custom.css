@@ -63,7 +63,9 @@ html.sticky-header-active #header .header-body {
 	font-weight: 700 !important;
 	gap: 10px;
 	height: auto !important;
+	justify-content: center;
 	letter-spacing: 0;
+	line-height: 1;
 	min-width: 150px;
 	padding: 14px 17px !important;
 	text-decoration: none !important;
@@ -78,9 +80,14 @@ html.sticky-header-active #header .header-body {
 }
 
 .home-slider-btn span {
+	align-items: center;
+	display: inline-flex;
 	font-size: 18px;
 	font-weight: 400;
+	justify-content: center;
 	line-height: 1;
+	position: relative;
+	top: -1px;
 }
 
 @media (max-width: 767px) {
@@ -94,14 +101,16 @@ html.sticky-header-active #header .header-body {
 	}
 
 	.home-slider-btn {
-		gap: 6px;
-		min-width: 112px;
-		padding: 7px 10px !important;
-		text-align: left !important;
+		font-size: 11px !important;
+		gap: 5px;
+		line-height: 14px !important;
+		min-width: 96px;
+		padding: 6px 9px !important;
+		text-align: center !important;
 	}
 
 	.home-slider-btn span {
-		font-size: 14px;
+		font-size: 13px;
 	}
 
 	.home-hero-slider .tparrows {
