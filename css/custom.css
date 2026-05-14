@@ -1,8 +1,10 @@
 .home-hero-slider,
 .home-hero-slider .rev_slider,
 .home-hero-slider .tp-revslider-mainul {
+	background: #fff !important;
 	border: 0 !important;
 	box-shadow: none !important;
+	outline: 0 !important;
 }
 
 #header .header-body,
@@ -24,6 +26,7 @@ html.sticky-header-active #header .header-body {
 }
 
 .home-hero-slider {
+	background: #fff !important;
 	overflow: hidden !important;
 	position: relative;
 }
@@ -86,22 +89,30 @@ html.sticky-header-active #header .header-body {
 	.home-hero-slider + .tp-fullwidth-forcer,
 	.main > .forcefullwidth_wrapper_tp_banner {
 		height: calc(100vw * 670 / 1170) !important;
+		min-height: 210px !important;
 		max-height: 670px !important;
 	}
 
 	.home-slider-btn {
-		min-width: 132px;
-		padding: 10px 13px !important;
-		text-align: center !important;
+		gap: 6px;
+		min-width: 112px;
+		padding: 7px 10px !important;
+		text-align: left !important;
+	}
+
+	.home-slider-btn span {
+		font-size: 14px;
 	}
 
 	.home-hero-slider .tparrows {
 		display: none !important;
 	}
 
+	.home-hero-slider .slotholder,
 	.home-hero-slider .slotholder .defaultimg,
-	.home-hero-slider .slotholder .slotslide {
-		background-position: center center !important;
+	.home-hero-slider .slotholder .slotslide,
+	.home-hero-slider .tp-bgimg.defaultimg {
+		background-position: 32% center !important;
 		background-repeat: no-repeat !important;
 		background-size: cover !important;
 	}
