@@ -101,16 +101,18 @@ html.sticky-header-active #header .header-body {
 	}
 
 	.home-slider-btn {
-		font-size: 11px !important;
-		gap: 5px;
-		line-height: 14px !important;
-		min-width: 96px;
-		padding: 6px 9px !important;
+		border-radius: 4px;
+		font-size: 9px !important;
+		gap: 4px;
+		line-height: 12px !important;
+		min-width: 0 !important;
+		padding: 4px 7px !important;
 		text-align: center !important;
+		width: auto !important;
 	}
 
 	.home-slider-btn span {
-		font-size: 13px;
+		font-size: 10px;
 	}
 
 	.home-hero-slider .tparrows {
