@@ -70,7 +70,7 @@
 
 	<!-- Web Fonts  -->
 	<link id="googleFonts"
-		href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap"
+		href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CPlayfair+Display:400,500,600,700%7CShadows+Into+Light&display=swap"
 		rel="stylesheet" type="text/css">
 
 	<!-- Vendor CSS -->
@@ -95,7 +95,7 @@
 	<link id="skinCSS" rel="stylesheet" href="css/skins/default.css">
 
 	<!-- Theme Custom CSS -->
-	<link rel="stylesheet" href="css/custom.css?v=20260516-3">
+	<link rel="stylesheet" href="css/custom.css?v=20260516-5">
 
 	<style>
 		#header,
@@ -145,8 +145,17 @@
 	<!-- End Google Tag Manager (noscript) -->
 
 	<div class="body">
-		<header id="header" class="header-effect-shrink"
-			data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': false, 'stickyEnableOnMobile': false, 'stickyStartAt': 70, 'stickyChangeLogo': false, 'stickyHeaderContainerHeight': 70}">
+		<header id="header" class="header-effect-shrink tibd-overlay-header"
+    data-plugin-options="{
+        'stickyEnabled': true, 
+        'stickyEffect': 'shrink', 
+        'stickyEnableOnBoxed': false, 
+        'stickyEnableOnMobile': true, 
+        'stickyStartAt': 70, 
+        'stickyChangeLogo': false, 
+        'stickyHeaderContainerHeight': 70,
+        'stickyTrackScrollDirection': true
+    }">
 			<div class="header-body border-top-0 box-shadow-none" style="border-top:0 !important;border-bottom:0 !important;box-shadow:none !important;">
 				<div class="header-container header-container-md container-fluid tibd-header-container">
 					<div class="header-row">
@@ -228,74 +237,144 @@
 			</div>
 		</header>
 
-		<div role="main" class="main">
+<div class="slider-container rev_slider_wrapper home-hero-slider tibd-hero-slider" style="height: 670px;">
+    <div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8"
+        data-plugin-revolution-slider
+        data-plugin-options="{'delay': 9000, 'gridwidth': [1170,1170,960,480], 'gridheight': [670,620,560,520], 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,500], 'navigation' : {'arrows': { 'enable': true }, 'bullets': {'enable': true, 'style': 'bullets-style-1', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 36, 'h_offset': 0}}}">
+        <ul>
+            <li data-transition="notransition">
+                <img src="img/slides/slider-1.png" alt="Web Development" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
 
-    <div class="slider-container rev_slider_wrapper home-hero-slider" style="height: 670px;">
-        <div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8"
-            data-plugin-revolution-slider
-            data-plugin-options="{'delay': 9000, 'gridwidth': [1170,1170,1170,1170], 'gridheight': [670,670,670,670], 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,500], 'navigation' : {'arrows': { 'enable': true }, 'bullets': {'enable': true, 'style': 'bullets-style-1', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 35, 'h_offset': 0}}}">
-            <ul>
-                <!-- SLIDE 1: Web Development -->
-                <li data-transition="fade">
-                    <img src="img/slides/tibd-slidr-1-no.png" alt="Web Development"
-                        data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                        class="rev-slidebg">
+                <div class="tp-caption"
+                    data-x="['left','left','left','left']" data-hoffset="['20','20','15','10']"
+                    data-y="['top','top','top','top']" data-voffset="['225','215','190','160']" 
+                    data-fontsize="['45','40','32','24']" data-lineheight="['54','48','40','30']" 
+                    data-whitespace="nowrap" 
+                    data-start="300"
+                    style="font-weight: 700; color: #111; letter-spacing: -1px; font-family: 'Playfair Display', serif;"
+                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                    data-transform_out="opacity:0;s:300;">Top notch <span style="color: #00AEEF;">web development</span> and <br> <span style="color: #00AEEF;">marketing expert</span> in Bangladesh</div>
 
-                    <a class="tp-caption home-slider-btn" href="#"
-                        data-x="['left','left','left','left']"
-                        data-hoffset="['-20','-20','-20','15']"
-                        data-y="['top','top','top','top']"
-                        data-voffset="['440','440','440','440']"
-                        data-fontsize="['14','14','14','9']"
-                        data-lineheight="['18','18','18','12']"
-                        data-whitespace="nowrap"
-                        data-start="700"
-                        data-transform_in="y:20px;opacity:0;s:600;e:Power2.easeOut;"
-                        data-transform_out="opacity:0;s:300;">Start Your Project <span>&rarr;</span></a>
-                </li>
+                <div class="tp-caption"
+                    data-x="['left','left','left','left']" data-hoffset="['20','20','15','10']"
+                    data-y="['top','top','top','top']" data-voffset="['170','160','140','120']" 
+                    data-fontsize="['15','14','13','11']"
+                    data-whitespace="nowrap"
+                    data-start="700"
+                    style="border: 1.5px solid #00AEEF; border-radius: 50px; padding: 5px 18px; font-weight: 600; color: #111; font-family: 'Poppins', sans-serif;"
+                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                    data-transform_out="opacity:0;s:300;"><i class="fas fa-globe" style="color: #00AEEF; margin-right: 8px;"></i> Web Development & Marketing</div>
 
-                <!-- SLIDE 2: Digital Marketing -->
-                <li data-transition="fade">
-                    <img src="img/slides/tibd-slider-2-no.png" alt="Digital Marketing"
-                        data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                        class="rev-slidebg">
+                <div class="tp-caption"
+                    data-x="['left','left','left','left']" data-hoffset="['20','20','15','10']"
+                    data-y="['top','top','top','top']" data-voffset="['355','335','290','250']" 
+                    data-width="['600','550','450','340']"
+                    data-fontsize="['16','16','14','12']" data-lineheight="['26','25','22','20']"
+                    data-whitespace="normal"
+                    data-start="1000"
+                    style="color: #444; font-weight: 400; font-family: 'Poppins', sans-serif;"
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                    data-transform_out="opacity:0;s:300;">We design and develop fast, responsive websites built for performance. We pair them with marketing strategies that attract, engage, and convert real customers.</div>
 
-                    <a class="tp-caption home-slider-btn" href="#"
-                        data-x="['left','left','left','left']"
-                        data-hoffset="['-20','-20','-20','15']"
-                        data-y="['top','top','top','top']"
-                        data-voffset="['440','440','440','440']"
-                        data-fontsize="['14','14','14','9']"
-                        data-lineheight="['18','18','18','12']"
-                        data-whitespace="nowrap"
-                        data-start="700"
-                        data-transform_in="y:20px;opacity:0;s:600;e:Power2.easeOut;"
-                        data-transform_out="opacity:0;s:300;">Let's Grow Together <span>&rarr;</span></a>
-                </li>
+                <a class="tp-caption home-slider-btn btn btn-primary" href="#"
+                    data-x="['left','left','left','left']" data-hoffset="['20','20','15','10']"
+                    data-y="['top','top','top','top']" data-voffset="['460','440','380','340']" 
+                    data-start="1200"
+                    style="background-color: #00AEEF; border: none; padding: 14px 30px; border-radius: 5px; font-weight: 600; font-size: 15px; color: #fff; text-decoration: none; display: inline-block;"
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                    data-transform_out="opacity:0;s:300;">Start Your Project &nbsp;<i class="fas fa-arrow-right"></i></a>
+            </li>
 
-                <!-- SLIDE 3: SEO -->
-                <li data-transition="fade">
-                    <img src="img/slides/tibd-slider-3-no.png" alt="SEO Service"
-                        data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                        class="rev-slidebg">
+            <li data-transition="notransition">
+                <img src="img/slides/slider-2.png" alt="Digital Marketing" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
 
-                    <a class="tp-caption home-slider-btn" href="#"
-                        data-x="['left','left','left','left']"
-                        data-hoffset="['-20','-20','-20','15']"
-                        data-y="['top','top','top','top']"
-                        data-voffset="['455','455','455','455']"
-                        data-fontsize="['14','14','14','9']"
-                        data-lineheight="['18','18','18','12']"
-                        data-whitespace="nowrap"
-                        data-start="700"
-                        data-transform_in="y:20px;opacity:0;s:600;e:Power2.easeOut;"
-                        data-transform_out="opacity:0;s:300;">Get a Free Audit <span>&rarr;</span></a>
-                </li>
-            </ul>
-        </div>
+                <div class="tp-caption"
+                    data-x="['left','left','left','left']" data-hoffset="['20','20','15','10']"
+                    data-y="['top','top','top','top']" data-voffset="['225','215','190','160']"
+                    data-fontsize="['45','40','32','24']" data-lineheight="['54','48','40','30']"
+                    data-whitespace="nowrap"
+                    data-start="300"
+                    style="font-weight: 700; color: #111; letter-spacing: -1px; font-family: 'Playfair Display', serif;"
+                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                    data-transform_out="opacity:0;s:300;">Expert <span style="color: #00AEEF;">digital marketing agency</span> <br> in Bangladesh</div>
+
+                <div class="tp-caption"
+                    data-x="['left','left','left','left']" data-hoffset="['20','20','15','10']"
+                    data-y="['top','top','top','top']" data-voffset="['170','160','140','120']"
+                    data-fontsize="['15','14','13','11']"
+                    data-whitespace="nowrap"
+                    data-start="700"
+                    style="border: 1.5px solid #00AEEF; border-radius: 50px; padding: 5px 18px; font-weight: 600; color: #111; font-family: 'Poppins', sans-serif;"
+                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                    data-transform_out="opacity:0;s:300;"><i class="fas fa-bullhorn" style="color: #00AEEF; margin-right: 8px;"></i> Digital Marketing Agency</div>
+
+                <div class="tp-caption"
+                    data-x="['left','left','left','left']" data-hoffset="['20','20','15','10']"
+                    data-y="['top','top','top','top']" data-voffset="['355','335','290','250']"
+                    data-width="['600','550','450','340']"
+                    data-fontsize="['16','16','14','12']" data-lineheight="['26','25','22','20']"
+                    data-whitespace="normal"
+                    data-start="1000"
+                    style="color: #444; font-weight: 400; font-family: 'Poppins', sans-serif;"
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                    data-transform_out="opacity:0;s:300;">From social media to paid ads and email campaigns, TailoredIT BD handles your entire digital marketing funnel so you can focus on running your business.</div>
+
+                <a class="tp-caption home-slider-btn btn btn-primary" href="#"
+                    data-x="['left','left','left','left']" data-hoffset="['20','20','15','10']"
+                    data-y="['top','top','top','top']" data-voffset="['460','440','380','340']"
+                    data-start="1200"
+                    style="background-color: #00AEEF; border: none; padding: 14px 30px; border-radius: 5px; font-weight: 600; font-size: 15px; color: #fff; text-decoration: none; display: inline-block;"
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                    data-transform_out="opacity:0;s:300;">Let's Grow Together &nbsp;<i class="fas fa-arrow-right"></i></a>
+            </li>
+
+            <li data-transition="notransition">
+                <img src="img/slides/slider-3.png" alt="SEO Service" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+
+                <div class="tp-caption"
+                    data-x="['left','left','left','left']" data-hoffset="['20','20','15','10']"
+                    data-y="['top','top','top','top']" data-voffset="['225','215','190','160']"
+                    data-fontsize="['45','40','32','24']" data-lineheight="['54','48','40','30']"
+                    data-whitespace="nowrap"
+                    data-start="300"
+                    style="font-weight: 700; color: #111; letter-spacing: -1px; font-family: 'Playfair Display', serif;"
+                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                    data-transform_out="opacity:0;s:300;">Best <span style="color: #00AEEF;">result driven SEO</span> service <br> in Bangladesh</div>
+
+                <div class="tp-caption"
+                    data-x="['left','left','left','left']" data-hoffset="['20','20','15','10']"
+                    data-y="['top','top','top','top']" data-voffset="['170','160','140','120']"
+                    data-fontsize="['15','14','13','11']"
+                    data-whitespace="nowrap"
+                    data-start="700"
+                    style="border: 1.5px solid #00AEEF; border-radius: 50px; padding: 5px 18px; font-weight: 600; color: #111; font-family: 'Poppins', sans-serif;"
+                    data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                    data-transform_out="opacity:0;s:300;"><i class="fas fa-chart-line" style="color: #00AEEF; margin-right: 8px;"></i> Results-Driven SEO</div>
+
+                <div class="tp-caption"
+                    data-x="['left','left','left','left']" data-hoffset="['20','20','15','10']"
+                    data-y="['top','top','top','top']" data-voffset="['355','335','290','250']"
+                    data-width="['600','550','450','340']"
+                    data-fontsize="['16','16','14','12']" data-lineheight="['26','25','22','20']"
+                    data-whitespace="normal"
+                    data-start="1000"
+                    style="color: #444; font-weight: 400; font-family: 'Poppins', sans-serif;"
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                    data-transform_out="opacity:0;s:300;">Our data-backed SEO strategies are built for measurable outcomes — more organic traffic, stronger rankings, and leads that actually matter to your bottom line.</div>
+
+                <a class="tp-caption home-slider-btn btn btn-primary" href="#"
+                    data-x="['left','left','left','left']" data-hoffset="['20','20','15','10']"
+                    data-y="['top','top','top','top']" data-voffset="['460','440','380','340']"
+                    data-start="1200"
+                    style="background-color: #00AEEF; border: none; padding: 14px 30px; border-radius: 5px; font-weight: 600; font-size: 15px; color: #fff; text-decoration: none; display: inline-block;"
+                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                    data-transform_out="opacity:0;s:300;">Get a Free Audit &nbsp;<i class="fas fa-arrow-right"></i></a>
+            </li>
+        </ul>
     </div>
+</div>
 
-			<div class="container pt-5">
+<div class="container pt-5">
 
 				<div class="row py-4 mb-2">
 					<div class="col-md-7 order-2">
@@ -750,8 +829,8 @@
 						<div
 							class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
 							<a href="index.html" class="logo pe-0 pe-lg-3">
-								<img alt="TailoredITBD Footer Logo" src="img/tailoreditbd/footer-logo-142x64px.png"
-									height="32">
+								<img alt="TailoredITBD Footer Logo" src="img/tailoreditbd/logotitbd.png" 
+             style="width: 146px; height: 64px; object-fit: contain; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">
 							</a>
 						</div>
 						<div
@@ -777,6 +856,30 @@
 
 	<!-- Theme Initialization Files -->
 	<script src="js/theme.init.js"></script>
+	<script>
+    let lastScrollTop = 0;
+    const htmlEl = document.documentElement;
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // যদি ইউজার স্ক্রোল করে নিচে নামে
+        if (scrollTop > lastScrollTop) {
+            htmlEl.classList.remove('sticky-header-scroll-up');
+        } 
+        // যদি ইউজার সামান্য স্ক্রোল করে উপরে ওঠে এবং স্ক্রিন স্লাইডারের নিচে থাকে
+        else if (scrollTop < lastScrollTop && scrollTop > 70) {
+            htmlEl.classList.add('sticky-header-scroll-up');
+        }
+        
+        // স্ক্রিন একদম উপরে চলে গেলে ক্লাস রিমুভ হবে
+        if (scrollTop <= 70) {
+            htmlEl.classList.remove('sticky-header-scroll-up');
+        }
+        
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    }, { passive: true });
+</script>
 
 </body>
 

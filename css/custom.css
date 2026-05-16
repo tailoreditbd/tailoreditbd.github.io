@@ -13,6 +13,96 @@ html.sticky-header-active #header .header-body {
 	box-shadow: none !important;
 }
 
+#header.tibd-overlay-header {
+	background: transparent !important;
+	left: 0;
+	position: absolute !important;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+#header.tibd-overlay-header .header-body,
+html.sticky-header-active #header.tibd-overlay-header .header-body {
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	min-height: 118px;
+}
+
+#header.tibd-overlay-header .header-container {
+	min-height: 118px;
+	padding-bottom: 18px !important;
+	padding-top: 18px !important;
+}
+
+#header.tibd-overlay-header .header-nav-main nav > ul > li > a {
+	color: #24272d !important;
+	font-size: 16px;
+	font-weight: 800;
+	letter-spacing: 0;
+	text-transform: uppercase;
+}
+
+#header.tibd-overlay-header .header-btn-collapse-nav {
+	align-items: center;
+	background: linear-gradient(135deg, #0879bd 0%, #0aa9df 100%) !important;
+	border: 0;
+	border-radius: 6px;
+	box-shadow: none;
+	display: inline-flex;
+	height: 56px;
+	justify-content: center;
+	margin: 0;
+	width: 56px;
+}
+
+#header.tibd-overlay-header .header-btn-collapse-nav i {
+	color: #fff;
+	font-size: 22px;
+	line-height: 1;
+}
+
+@media (min-width: 992px) {
+	#header.tibd-overlay-header .header-row {
+		position: relative;
+	}
+
+	#header.tibd-overlay-header .header-column:first-child {
+		flex: 0 0 auto;
+		width: auto;
+	}
+
+	#header.tibd-overlay-header .header-column.justify-content-end {
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: auto;
+	}
+
+	#header.tibd-overlay-header .header-nav-main nav.collapse {
+		display: block !important;
+	}
+
+	#header.tibd-overlay-header .header-nav-main nav > ul {
+		align-items: center;
+		display: flex;
+		gap: 42px;
+		justify-content: center;
+		margin: 0;
+	}
+
+	#header.tibd-overlay-header .header-nav-main nav > ul > li {
+		margin: 0;
+	}
+
+	#header.tibd-overlay-header .header-btn-collapse-nav {
+		display: none !important;
+	}
+}
+
 .tibd-header-container {
 	max-width: 100% !important;
 	padding-left: 28px !important;
@@ -75,6 +165,10 @@ html.sticky-header-active #header .header-body {
 	position: relative;
 }
 
+.tibd-hero-slider {
+	margin-top: 0 !important;
+}
+
 .home-hero-slider::before,
 .home-hero-slider::after {
 	content: "";
@@ -95,6 +189,54 @@ html.sticky-header-active #header .header-body {
 
 .home-hero-slider::after {
 	bottom: 0;
+}
+
+.tibd-hero-slider::before,
+.tibd-hero-slider::after {
+	display: none !important;
+}
+
+.tibd-hero-eyebrow,
+.tibd-hero-title,
+.tibd-hero-text,
+.tibd-hero-button {
+	will-change: opacity, transform;
+}
+
+.tibd-hero-eyebrow {
+	align-items: center;
+	background: rgba(255, 255, 255, 0.9);
+	border: 1px solid #10b7e7;
+	border-radius: 999px;
+	box-shadow: 0 12px 35px rgba(7, 151, 202, 0.1);
+	color: #22262d;
+	display: inline-flex;
+	font-weight: 800;
+	padding: 11px 22px;
+}
+
+.tibd-hero-slider .tibd-hero-eyebrow {
+	display: none !important;
+}
+
+.tibd-hero-title {
+	color: #050608;
+	font-family: "Playfair Display", Georgia, serif;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+}
+
+.tibd-hero-title span {
+	color: #069ed1;
+	display: block;
+	margin-top: 4px;
+}
+
+.tibd-hero-text {
+	color: #2b2d33;
+	font-weight: 700;
+	letter-spacing: 0;
 }
 
 .home-slider-btn {
@@ -134,23 +276,54 @@ html.sticky-header-active #header .header-body {
 	top: -1px;
 }
 
+.home-hero-slider .tparrows {
+	display: none !important;
+}
+
 @media (max-width: 767px) {
 	.home-hero-slider,
 	.home-hero-slider .rev_slider,
 	.home-hero-slider + .tp-fullwidth-forcer,
 	.main > .forcefullwidth_wrapper_tp_banner {
-		height: calc(100vw * 670 / 1170) !important;
-		min-height: 210px !important;
-		max-height: 670px !important;
+		height: clamp(430px, 132vw, 540px) !important;
+		min-height: 430px !important;
+		max-height: 540px !important;
+	}
+
+	#header.tibd-overlay-header .header-body,
+	#header.tibd-overlay-header .header-container {
+		min-height: 110px;
+	}
+
+	#header.tibd-overlay-header .header-container {
+		padding-bottom: 16px !important;
+		padding-top: 16px !important;
+	}
+
+	#header.tibd-overlay-header .header-nav-main nav {
+		background: rgba(255, 255, 255, 0.96);
+		border-radius: 8px;
+		box-shadow: 0 18px 45px rgba(5, 20, 35, 0.12);
+		margin-top: 14px;
+		padding: 12px;
+	}
+
+	#header.tibd-overlay-header .header-btn-collapse-nav {
+		height: 56px;
+		width: 56px;
+	}
+
+	.tibd-hero-eyebrow {
+		padding: 7px 12px;
 	}
 
 	.home-slider-btn {
 		border-radius: 4px;
-		font-size: 9px !important;
+		font-size: 10px !important;
 		gap: 4px;
-		line-height: 12px !important;
+		line-height: 13px !important;
 		min-width: 0 !important;
-		padding: 4px 7px !important;
+		padding: 7px 10px !important;
 		text-align: center !important;
 		width: auto !important;
 	}
@@ -167,7 +340,7 @@ html.sticky-header-active #header .header-body {
 	.home-hero-slider .slotholder .defaultimg,
 	.home-hero-slider .slotholder .slotslide,
 	.home-hero-slider .tp-bgimg.defaultimg {
-		background-position: 32% center !important;
+		background-position: 62% center !important;
 		background-repeat: no-repeat !important;
 		background-size: cover !important;
 	}
@@ -189,4 +362,71 @@ html.sticky-header-active #header .header-body {
 	.main > .forcefullwidth_wrapper_tp_banner {
 		height: 620px !important;
 	}
+}
+/* ==========================================================================
+   Tailored IT BD - Curtivelle Style Solid Sticky Header
+   ========================================================================== */
+
+/* ডিফল্ট অবস্থায় হেডার স্লাইডারের ওপরে একদম ট্রান্সপারেন্ট থাকবে */
+#header.tibd-overlay-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    background: transparent !important;
+}
+
+/* যখন মাউস দিয়ে স্ক্রোল করে নিচে নামবেন */
+html.sticky-header-active #header .header-body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    /* কার্টিভেলের মতো সলিড সাদা ব্যাকগ্রাউন্ড (কোনো ব্লার বা ট্রান্সপারেন্সি থাকবে না) */
+    background-color: #00AEEF !important; 
+    backdrop-filter: none !important; /* পেছনের লেখা ব্লার হওয়া বন্ধ */
+    
+    /* নিচের দিকে কার্টিভেলের মতো একটি প্রফেশনাল হালকা শ্যাডো */
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.06) !important; 
+    
+    /* শুরুতে এটিকে উপরে লুকিয়ে রাখা হবে */
+    transform: translateY(-100%); 
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* মাউস স্ক্রোল করে সামান্য উপরে উঠলে (Scroll Up) হেডারটি ওপর থেকে নেমে আসবে */
+html.sticky-header-scroll-up #header .header-body {
+    transform: translateY(0) !important; 
+}
+
+/* স্টিকি অবস্থায় লোগো সামান্য ছোট হবে এবং কোনো কাঁপাকাঁপি করবে না */
+html.sticky-header-active .tibd-header-logo img {
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* মোবাইল রেসপন্সিভনেস ফিক্স */
+@media (max-width: 991px) {
+    html.sticky-header-active #header .header-body {
+        position: fixed !important;
+    }
+}
+/* ==========================================================================
+   Footer Logo Dark Background Visibility Fix
+   ========================================================================== */
+
+.footer-logo img {
+    /* লোগোর পেছনের কালো লেখাকে দৃশ্যমান করার জন্য চারপাশ দিয়ে একটি হালকা সাদা গ্লো (Drop Shadow) */
+    filter: drop-shadow(1px 1px 0px #ffffff) 
+            drop-shadow(-1px -1.5px 0px #ffffff) 
+            drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.8)) !important;
+            
+    /* ছোট করার কারণে পিক্সেল যেন ঘোলা না হয় (ক্রিস্প লুক) */
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
+    
+    /* সেফটি ট্রানজিশন */
+    transition: all 0.3s ease-in-out;
 }
