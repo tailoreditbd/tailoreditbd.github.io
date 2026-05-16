@@ -430,3 +430,45 @@ html.sticky-header-active .tibd-header-logo img {
     /* সেফটি ট্রানজিশন */
     transition: all 0.3s ease-in-out;
 }
+/* ==========================================================================
+   Tailored IT BD - Services Grid Hover Blue Effect & Crystal Clear Text
+   ========================================================================== */
+
+/* ১. ডিফল্ট অবস্থায় পুরো সার্ভিস কলাম/বক্সের এরিয়া এবং ট্রানজিশন সেটিংস */
+.featured-box-effect-1, 
+.featured-box,
+[class*="col-"]:has(.featured-box) {
+    border-radius: 8px;
+    padding: 25px 20px;
+    background-color: transparent;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+/* ২. ম্যাজিক পার্ট: মাউস নিলে (Hover করলে) ব্যাকগ্রাউন্ড নীল হবে এবং সুন্দর শ্যাডো আসবে */
+[class*="col-"]:has(.featured-box):hover {
+    background-color: #00AEEF !important; /* লোগোর ম্যাচিং নীল কালার */
+    box-shadow: 0 10px 30px rgba(0, 174, 239, 0.3) !important; /* প্রিমিয়াম গ্লো শ্যাডো */
+    transform: translateY(-5px); /* বক্সটি সামান্য ৫ পিক্সেল ওপরে ভেসে উঠবে কার্টিভেলের মতো */
+}
+
+/* ৩. হোভার করলে ভেতরের আইকনের কালার একদম ক্রিস্টাল ক্লিয়ার সাদা করা */
+[class*="col-"]:has(.featured-box):hover .icon-featured,
+[class*="col-"]:has(.featured-box):hover i {
+    color: #ffffff !important;
+    transition: color 0.3s ease !important;
+}
+
+/* ৪. হোভার করলে মেইন শিরোনাম (যেমন: Web Development Services) সাদা করা */
+[class*="col-"]:has(.featured-box):hover h4,
+[class*="col-"]:has(.featured-box):hover h3 {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    transition: color 0.3s ease !important;
+}
+
+/* ৫. হোভার করলে নিচের প্যারাগ্রাফের টেক্সট একদম পরিষ্কার সাদা করা */
+[class*="col-"]:has(.featured-box):hover p {
+    color: #ffffff !important;
+    opacity: 1 !important; /* কোনো আবছা ভাব থাকবে না, সম্পূর্ণ ক্রিস্টাল ক্লিয়ার দেখাবে */
+    transition: color 0.3s ease !important;
+}
