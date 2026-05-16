@@ -13,6 +13,50 @@ html.sticky-header-active #header .header-body {
 	box-shadow: none !important;
 }
 
+.tibd-header-container {
+	max-width: 100% !important;
+	padding-left: 28px !important;
+	padding-right: 28px !important;
+}
+
+.tibd-header-logo {
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+}
+
+.tibd-header-logo img {
+	backface-visibility: hidden;
+	display: block;
+	filter: none !important;
+	height: auto !important;
+	image-rendering: auto;
+	max-height: none !important;
+	max-width: 230px;
+	object-fit: contain;
+	transform: translateZ(0);
+	width: 230px !important;
+}
+
+@media (min-width: 1200px) {
+	.tibd-header-container {
+		padding-left: 42px !important;
+		padding-right: 42px !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.tibd-header-container {
+		padding-left: 16px !important;
+		padding-right: 16px !important;
+	}
+
+	.tibd-header-logo img {
+		max-height: none !important;
+		max-width: 180px;
+		width: 180px !important;
+	}
+}
+
 .main > .forcefullwidth_wrapper_tp_banner,
 .home-hero-slider .tp-bannertimer,
 .home-hero-slider .tp-bannershadow {
