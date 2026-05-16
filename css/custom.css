@@ -472,3 +472,142 @@ html.sticky-header-active .tibd-header-logo img {
     opacity: 1 !important; /* কোনো আবছা ভাব থাকবে না, সম্পূর্ণ ক্রিস্টাল ক্লিয়ার দেখাবে */
     transition: color 0.3s ease !important;
 }
+/* ==========================================================================
+   Tailored IT BD - Complete Mobile & Tablet Responsiveness Fix
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   ১. স্লাইডার রেসপন্সিভনেস (Slider Text & Button Fix for Mobile)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    /* স্লাইডারের মেইন কন্টেইনারের হাইট মোবাইলে একটু কমিয়ে আনা */
+    .slider-container.home-hero-slider, 
+    .slider-container.home-hero-slider .rev_slider {
+        height: 520px !important;
+    }
+
+    /* ছোট টেক্সট বক্স (Eyebrow) মোবাইলে পজিশন ও সাইজ ফিক্স */
+    .tibd-hero-slider .tp-caption[style*="border"] {
+        padding: 4px 12px !important;
+        font-size: 11px !important;
+        top: 90px !important; /* স্ক্রিনের ওপর থেকে দূরত্ব কমানো হলো */
+        left: 20px !important;
+    }
+
+    /* বড় হেডলাইন মোবাইলে যেন বাইরে না যায় এবং সাইজ ছোট হয় */
+    .tibd-hero-slider div[style*="Playfair Display"] {
+        font-size: 24px !important;
+        line-height: 32px !important;
+        white-space: normal !important; /* টেক্সট অটোমেটিক ভেঙে নিচে নামবে */
+        width: 85% !important;
+        top: 135px !important;
+        left: 20px !important;
+    }
+
+    /* প্যারাগ্রাফ মোবাইলে হালকা ছোট এবং হেডলাইনের নিচে পারফেক্ট গ্যাপ */
+    .tibd-hero-slider div[style*="color: #444"] {
+        font-size: 12px !important;
+        line-height: 18px !important;
+        width: 85% !important;
+        top: 250px !important;
+        left: 20px !important;
+    }
+
+    /* বাটন মোবাইলে সাইজ ঠিক করা এবং নিচে নামানো */
+    .tibd-hero-slider .home-slider-btn {
+        padding: 10px 20px !important;
+        font-size: 13px !important;
+        top: 360px !important;
+        left: 20px !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   ২. হেডার, লোগো ও নেভিগেশন (Header, Logo & Nav Mobile Fix)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+    /* মোবাইল হেডার বডি */
+    #header.tibd-overlay-header .header-body {
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    /* স্টিকি (স্ক্রোল) অবস্থায় মোবাইলে নীল বক্স ঠিকঠাক দেখানোর জন্য */
+    html.sticky-header-active #header.tibd-overlay-header .header-body {
+        background-color: #00AEEF !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+        padding: 10px 0 !important;
+    }
+
+    /* মোবাইলে লোগোর সাইজ রেসপন্সিভ করা */
+    #header .header-logo img,
+    html.sticky-header-active .tibd-header-logo img {
+        width: 160px !important; /* মোবাইলে লোগো সামান্য ছোট হবে */
+        height: auto !important;
+    }
+
+    /* মোবাইলের হ্যামবার্গার (মেনু থ্রি-লাইন) বাটন ফিক্স */
+    #header .btn-header-toggle-nav {
+        background-color: rgba(255, 255, 255, 0.2) !important;
+        border: 1px solid rgba(255, 255, 255, 0.4) !important;
+        color: #ffffff !important; /* বাটন আইকন সাদা হবে */
+        margin-top: 15px !important;
+    }
+
+    /* মোবাইল ড্রপডাউন মেনু বক্সের স্টাইল */
+    #header .header-nav-main nav {
+        background-color: #ffffff !important; /* মেনু ওপেন করলে ভেতরটা সাদা হবে */
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+        border-radius: 8px;
+        padding: 10px !important;
+    }
+
+    /* মোবাইল মেনুর ভেতরের লেখার কালার কালো রাখা যাতে সাদা ব্যাকগ্রাউন্ডে পড়া যায় */
+    #header .header-nav-main nav ul li a {
+        color: #333333 !important;
+        border-bottom: 1px solid #f4f4f4 !important;
+        padding: 12px 15px !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   ৩. কাস্টম সার্ভিস কার্ড গ্রিড (Services Grid Mobile Grid Fix)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+    /* ট্যাবলেট ও মোবাইলে ৪টা বক্স এক লাইনে না থেকে ভেঙে নিচে নিচে নামবে */
+    .featured-boxes .col-md-6,
+    .featured-boxes .col-lg-3 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .featured-box.tibd-service-card {
+        min-height: auto !important; /* মোবাইলে এক্সট্রা ফাঁকা জায়গা দরকার নেই */
+        padding: 25px 20px !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   ৪. ফুটার ও কপিরাইট এরিয়া (Footer & Copyright Responsive Fix)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    /* মোবাইলে ফুটার কন্টেন্ট মাঝখানে (Center) নিয়ে আসা */
+    footer, 
+    .footer-copyright,
+    .footer-copyright .row {
+        text-align: center !important;
+    }
+
+    /* ফুটার লোগো মাঝখানে আনা */
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px !important;
+    }
+
+    /* কপিরাইট টেক্সট এবং অন্যান্য এলিমেন্ট এর অ্যালাইনমেন্ট */
+    .footer-copyright p {
+        text-align: center !important;
+        margin-top: 10px !important;
+    }
+}
