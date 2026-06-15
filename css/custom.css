@@ -850,3 +850,25 @@ html.sticky-header-active .tibd-header-logo img {
 	min-height: 120px;
 	text-align: center;
 }
+.btn-orange {
+    background-color: #E64703;
+    border-color: #E64703;
+    color: #fff;
+    transition: all 0.25s ease-in-out;
+}
+
+/* Hover effect */
+.btn-orange:hover {
+    background-color: #ff5a1a;
+    border-color: #ff5a1a;
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px #fff;
+}
+
+/* Click effect */
+.btn-orange:active {
+    transform: translateY(0px);
+    box-shadow: 0 4px 10px rgba(245, 239, 236, 0.25);
+}
+

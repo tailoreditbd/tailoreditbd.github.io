@@ -7053,6 +7053,7 @@ hr.pattern.pattern-2:after, .divider.pattern.pattern-2:after {
 
 .featured-box-effect-4:hover .icon-featured {
 	transform: scale(1.15);
+	
 }
 
 .featured-box-effect-5 .icon-featured {
@@ -15809,6 +15810,7 @@ section.section.section-funnel .section-funnel-layer:nth-child(2) {
 	transform: skewY(4.7deg);
 }
 
+
 section.section.section-angled {
 	position: relative;
 	margin: 0;
@@ -16325,6 +16327,11 @@ section.section-quaternary-scale-2 {
 
 section.section-quaternary-scale-2 .sort-source.sort-source-style-2 > li.active > a:after {
 	border-top-color: var(--quaternary-300);
+}
+
+section.theme-tibd{
+	background-color: #080969 !important;
+	color:#fff !important;
 }
 
 section.section-dark {
@@ -22622,4 +22629,13 @@ ul.team-list .team-item .thumb-info-social-icons {
 		letter-spacing: 0;
 		line-height: 100px;
 	}
+}
+
+#accordionWhyChooseUs-arrow-remove .accordion-toggle::after {
+    display: none !important;
+    content: none !important;
+}
+
+.sticky-header-active #header .header-body {
+    background: #080969 !important;
 }
