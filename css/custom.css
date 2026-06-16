@@ -900,3 +900,20 @@ html.sticky-header-active .tibd-header-logo img {
          1px  1px 0 #ffffff,
          0px  0px 8px #ffffff;
 }
+
+.text-theme-blue {
+    color: #080969 !important;
+}
+.featured-box-effect-4 .icon-featured {
+    color: #E64703 !important;
+}
+.toggle.active .toggle-title {
+    background-color: #E64703 !important;
+	color: #fff !important;
+	 border-color: #E64703 !important;
+}
+
+.toggle .toggle-title {
+	color: #E64703 !important;
+	border-color: #E64703 !important;
+}
