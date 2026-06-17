@@ -37,6 +37,9 @@ h3{font-size:1.04rem}
   backdrop-filter:blur(16px);
 }
 .navbar-brand{display:flex;align-items:center;gap:9px;font-weight:900;color:var(--navy);font-size:.92rem}
+.navbar-brand span{display:flex;flex-direction:column;line-height:1.08}
+.navbar-brand strong{font-size:.92rem;letter-spacing:0;color:var(--navy)}
+.navbar-brand small{margin-top:3px;color:var(--orange);font-size:.58rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
 .navbar-brand img{width:34px;height:34px}
 .navbar .nav-link{font-size:.82rem;font-weight:700;color:#43516a;padding:.5rem .72rem}
 .navbar .nav-link:hover,.navbar .nav-link.active{color:var(--orange)}
@@ -242,6 +245,26 @@ h3{font-size:1.04rem}
 .cta-panel{padding:60px 68px;border-radius:16px;color:#fff;background:radial-gradient(circle at 90% 20%,rgba(255,106,26,.7),transparent 24%),linear-gradient(118deg,#061832,#09244d 58%,#b13f1c);box-shadow:0 22px 60px rgba(9,36,77,.16)}
 .cta-panel h2{color:#fff;font-size:clamp(2rem,4vw,3.6rem)}.cta-panel p:not(.kicker){max-width:760px;color:#d9e6f7;margin-top:14px}.cta-panel .kicker{color:#ffcfb8}
 
+.page-hero{min-height:520px;padding:150px 0 86px}
+.page-hero .hero-content{margin-left:96px}
+.page-hero .hero-content>p:not(.hero-pill){max-width:760px}
+.page-hero .button-row{margin-top:30px}
+.page-intro p{margin-top:18px}
+.feature-list{display:grid;gap:14px;margin-top:24px}
+.feature-list span{display:flex;align-items:flex-start;gap:12px;color:var(--ink);font-weight:700}
+.feature-list i{display:grid;place-items:center;flex:0 0 26px;width:26px;height:26px;border-radius:50%;background:#fff3ec;color:var(--orange);font-size:.82rem}
+.process-list{display:grid;gap:18px}
+.process-list article{position:relative;padding:24px 24px 24px 78px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 34px rgba(9,36,77,.04)}
+.process-list strong{position:absolute;left:24px;top:24px;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-size:.78rem}
+.process-list h3{margin-bottom:8px}
+.service-detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.client-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.client-story-grid article{min-height:184px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 34px rgba(9,36,77,.04)}
+.client-story-grid i{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:var(--orange);color:#fff;margin-bottom:16px}
+.split-panel{padding:34px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+.split-panel h2{font-size:clamp(1.8rem,3vw,2.7rem)}
+.split-panel p{margin-top:14px}
+
 .faq-section{background:#fff}.faq-section .btn{margin-top:26px}
 .accordion-item{border:0;border-bottom:1px solid var(--line);border-radius:0!important}.accordion-button{padding:20px 0;font-weight:800;color:var(--navy);background:#fff}.accordion-button:not(.collapsed){color:var(--navy);background:#fff;box-shadow:none}.accordion-button:focus{box-shadow:none}
 
@@ -256,15 +279,15 @@ h3{font-size:1.04rem}
 
 @media (max-width:991.98px){
   .navbar-collapse{padding:16px;margin-top:12px;border:1px solid var(--line);border-radius:12px;background:#fff}
-  .hero{padding-top:128px}.hero-slider{margin-left:0}.hero-stats{grid-template-columns:1fr;gap:14px}
-  .service-grid,.logo-grid{grid-template-columns:repeat(2,1fr)}
+  .hero{padding-top:128px}.hero-slider,.page-hero .hero-content{margin-left:0}.hero-stats{grid-template-columns:1fr;gap:14px}
+  .service-grid,.logo-grid,.service-detail-grid,.client-story-grid{grid-template-columns:repeat(2,1fr)}
   .brand-strip{grid-template-columns:repeat(3,1fr)}
   .news-head{display:block}.news-head .btn{margin-top:18px}
 }
 @media (max-width:767.98px){
   h1,.hero-heading{font-size:2.75rem}.section{padding:76px 0}.hero{min-height:auto;padding-bottom:62px}
   .hero-slides{min-height:430px}.hero-slider-controls{margin-top:18px}
-  .service-grid,.logo-grid,.why-grid,.brand-strip{grid-template-columns:1fr}.why-grid article:last-child{grid-column:auto}
+  .service-grid,.logo-grid,.why-grid,.brand-strip,.service-detail-grid,.client-story-grid{grid-template-columns:1fr}.why-grid article:last-child{grid-column:auto}
   .illustration-card{min-height:360px}.person-left{left:56px}.person-right{right:56px}.metric-row{left:18px;right:18px;gap:6px}
   .cta-panel{padding:36px 24px}.footer-bottom{display:block}
 }
