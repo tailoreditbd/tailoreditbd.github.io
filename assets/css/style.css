@@ -287,7 +287,7 @@ h3{font-size:1.04rem}
 
 @media (max-width:991.98px){
   .navbar-brand{flex:1 1 auto;max-width:calc(100% - 54px)}
-  .navbar-brand small{white-space:normal;line-height:1.12}
+  .navbar-brand small{line-height:1.12}
   .navbar-collapse{padding:16px;margin-top:12px;border:1px solid var(--line);border-radius:12px;background:#fff}
   .hero{padding-top:128px}.hero-slider,.page-hero .hero-content{margin-left:0}.hero-stats{grid-template-columns:1fr;gap:14px}
   .service-grid,.logo-grid,.service-detail-grid,.client-story-grid{grid-template-columns:repeat(2,1fr)}
@@ -299,7 +299,7 @@ h3{font-size:1.04rem}
   .navbar-brand{gap:8px}
   .navbar-brand img{width:30px;height:30px}
   .navbar-brand strong{font-size:.88rem}
-  .navbar-brand small{font-size:.52rem;letter-spacing:.05em}
+  .navbar-brand small{width:118px;white-space:normal;font-size:.52rem;letter-spacing:.05em}
   h1,.hero-heading{font-size:2.75rem}.section{padding:76px 0}.hero{min-height:auto;padding-bottom:62px}
   .hero-slides{min-height:430px}.hero-slider-controls{margin-top:18px}
   .service-grid,.logo-grid,.why-grid,.brand-strip,.service-detail-grid,.client-story-grid{grid-template-columns:1fr}.why-grid article:last-child{grid-column:auto}
@@ -307,5 +307,5 @@ h3{font-size:1.04rem}
   .cta-panel{padding:36px 24px}.footer-bottom{display:block}
 }
 @media (max-width:380px){
-  .navbar-brand small{max-width:230px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .navbar-brand small{width:118px}
 }
