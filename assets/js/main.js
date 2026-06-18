@@ -22,6 +22,10 @@
 
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
+      if(link.classList.contains('dropdown-toggle')){
+        return;
+      }
+
       if(navCollapse && navCollapse.classList.contains('show') && window.bootstrap){
         window.bootstrap.Collapse.getOrCreateInstance(navCollapse).hide();
       }
