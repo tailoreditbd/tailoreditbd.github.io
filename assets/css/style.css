@@ -66,6 +66,12 @@ h3{font-size:1.04rem}
     radial-gradient(circle at 96% 58%,rgba(255,106,26,.38),transparent 17%),
     linear-gradient(118deg,#05152d 0%,#08244d 54%,#183764 73%,#9c361d 100%);
 }
+.hero.hero-bg-slide-1{
+  background:
+    linear-gradient(90deg,rgba(5,21,45,.92) 0%,rgba(8,36,77,.76) 48%,rgba(8,36,77,.34) 100%),
+    url("../img/slider-01.png") center center/cover no-repeat,
+    linear-gradient(118deg,#05152d 0%,#08244d 54%,#183764 73%,#9c361d 100%);
+}
 .hero:before{
   content:"";
   position:absolute;

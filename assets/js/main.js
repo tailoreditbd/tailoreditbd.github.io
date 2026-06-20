@@ -32,6 +32,7 @@
     });
   });
 
+  const hero = document.querySelector('.hero');
   const heroSlides = document.querySelectorAll('.hero-slide');
   const heroDots = document.querySelectorAll('[data-hero-dot]');
   const heroPrev = document.querySelector('[data-hero-prev]');
@@ -49,6 +50,10 @@
       slide.classList.toggle('active', active);
       slide.setAttribute('aria-hidden', active ? 'false' : 'true');
     });
+
+    if(hero){
+      hero.classList.toggle('hero-bg-slide-1', heroIndex === 0);
+    }
 
     heroDots.forEach((dot, i) => {
       const active = i === heroIndex;
