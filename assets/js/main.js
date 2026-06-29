@@ -52,7 +52,9 @@
     });
 
     if(hero){
-      hero.classList.toggle('hero-bg-slide-1', heroIndex === 0);
+      heroSlides.forEach((_, i) => {
+        hero.classList.toggle('hero-bg-slide-' + (i + 1), heroIndex === i);
+      });
     }
 
     heroDots.forEach((dot, i) => {

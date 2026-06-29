@@ -66,7 +66,19 @@ h3{font-size:1.04rem}
 .hero.hero-bg-slide-1{
   background:
     linear-gradient(90deg,rgba(5,21,45,.92) 0%,rgba(8,36,77,.76) 48%,rgba(8,36,77,.34) 100%),
-    url("../img/slider-01.png") center center/cover no-repeat,
+    url("../img/homepage-slider-1.png") center center/cover no-repeat,
+    linear-gradient(118deg,#05152d 0%,#08244d 54%,#183764 73%,#9c361d 100%);
+}
+.hero.hero-bg-slide-2{
+  background:
+    linear-gradient(90deg,rgba(5,21,45,.92) 0%,rgba(8,36,77,.76) 48%,rgba(8,36,77,.34) 100%),
+    url("../img/homepage-slider-2.png") center center/cover no-repeat,
+    linear-gradient(118deg,#05152d 0%,#08244d 54%,#183764 73%,#9c361d 100%);
+}
+.hero.hero-bg-slide-3{
+  background:
+    linear-gradient(90deg,rgba(5,21,45,.92) 0%,rgba(8,36,77,.76) 48%,rgba(8,36,77,.34) 100%),
+    url("../img/homepage-slider-3.png") center center/cover no-repeat,
     linear-gradient(118deg,#05152d 0%,#08244d 54%,#183764 73%,#9c361d 100%);
 }
 .hero:before{
@@ -229,8 +241,8 @@ h3{font-size:1.04rem}
 .client-logo-grid{align-items:stretch}
 .client-logo-card{display:flex;flex-direction:column;align-items:center;text-align:center;min-height:204px;transition:.22s ease}
 .client-logo-card:hover{border-color:#ffe2d2;box-shadow:0 18px 42px rgba(9,36,77,.09);transform:translateY(-3px)}
-.client-logo-frame{display:grid;place-items:center;width:100%;height:92px;margin-bottom:18px;padding:16px;border-radius:10px;background:linear-gradient(180deg,#fff 0%,#f8fbff 100%);border:1px solid #edf2f7}
-.client-logo-frame img{display:block;max-width:100%;max-height:58px;object-fit:contain}
+.client-logo-frame{display:grid;place-items:center;width:100%;height:132px;margin-bottom:18px;padding:0px;border-radius:5px;background:linear-gradient(180deg,#fff 0%,#f8fbff 100%);border:1px solid #edf2f7}
+.client-logo-frame img{display:block;max-width:100%;max-height:100%;object-fit:contain}
 .client-logo-card strong{font-size:1rem}
 .client-logo-card span{max-width:210px;line-height:1.55}
 .client-page-logo-grid{grid-template-columns:repeat(3,1fr)}
