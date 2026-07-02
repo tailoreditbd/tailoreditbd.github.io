@@ -184,13 +184,13 @@ h3{font-size:1.04rem}
   position:relative;
   min-height:430px;
   border-radius:16px;
-  background:#fff;
+  background:url(../img/leading-digital-marketing-agency-in-bangladesh.jpeg) center center/cover no-repeat;
   box-shadow:0 26px 80px rgba(255,106,26,.14);
   overflow:hidden;
   border:1px solid #f5e9e2;
 }
-.illustration-card:before{content:"";position:absolute;inset:42px 38px 92px;border-radius:50%;background:#4ea4d8}
-.sun{position:absolute;right:132px;top:82px;width:34px;height:34px;border-radius:50%;background:#ffc857}
+.illustration-card:before{display:none}
+.illustration-card .sun,.illustration-card .person,.illustration-card .monitor,.illustration-card .metric-row{display:none}
 .monitor{position:absolute;left:50%;top:170px;transform:translateX(-50%);width:150px;height:100px;border:9px solid #fff;border-radius:8px;background:#f7fbff;box-shadow:0 12px 24px rgba(9,36,77,.18)}
 .chart{position:absolute;bottom:18px;left:26px;width:18px;height:36px;background:var(--orange);border-radius:4px 4px 0 0}.chart.small{left:62px;height:52px;background:#ffd166}.chart.tiny{left:98px;height:28px;background:#09244d}
 .person{position:absolute;bottom:118px;width:116px;height:124px;background:var(--orange);border-radius:60px 60px 18px 18px}
@@ -215,16 +215,17 @@ h3{font-size:1.04rem}
 .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 34px}
 .service-grid article{
   position:relative;
-  min-height:178px;
-  padding:22px 24px;
+  min-height:360px;
+  padding:0 24px 22px;
   border-radius:12px;
   background:#fff;
   border:1px solid #f1f4f8;
+  overflow:hidden;
   transition:.22s ease;
 }
 .service-grid article:after{content:"+";position:absolute;right:20px;top:20px;color:#c6cfdb;font-weight:900}
 .service-grid article:hover{box-shadow:var(--shadow);border-color:#ffe2d2;transform:translateY(-3px)}
-.service-grid i{color:var(--orange);font-size:1.1rem;margin-bottom:18px}
+.service-icon{display:block;width:calc(100% + 48px);height:178px;margin:0 -24px 20px;border-radius:12px 12px 0 0;object-fit:cover;background:#fff3ec}
 .service-grid p{font-size:.82rem;margin-top:8px}
 .service-grid a{display:inline-block;margin-top:12px;color:var(--orange);font-size:.75rem;font-weight:800}
 
@@ -265,7 +266,7 @@ h3{font-size:1.04rem}
 .why-grid i{background:var(--orange)}
 
 .cta-wrap{padding:78px 0;background:#fff}
-.cta-panel{padding:60px 68px;border-radius:16px;color:#fff;background:radial-gradient(circle at 90% 20%,rgba(255,106,26,.7),transparent 24%),linear-gradient(118deg,#061832,#09244d 58%,#b13f1c);box-shadow:0 22px 60px rgba(9,36,77,.16)}
+.cta-panel{padding:60px 68px;border-radius:16px;color:#fff;background:linear-gradient(118deg,rgba(6,24,50,.92),rgba(9,36,77,.78) 54%,rgba(177,63,28,.76)),url(../img/lets-grow-your-business-together.jpeg) center center/cover no-repeat;box-shadow:0 22px 60px rgba(9,36,77,.16)}
 .cta-panel h2{color:#fff;font-size:clamp(2rem,4vw,3.6rem)}.cta-panel p:not(.kicker){max-width:760px;color:#d9e6f7;margin-top:14px}.cta-panel .kicker{color:#ffcfb8}
 
 .page-hero{min-height:520px;padding:150px 0 86px}
