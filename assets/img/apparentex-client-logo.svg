@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 336 120" role="img" aria-labelledby="title desc">
+  <title id="title">Apparentex</title>
+  <desc id="desc">Apparentex garment buying house logo</desc>
+  <g fill="#17362d">
+    <path d="M58 20 91.6 85.1H76.5l-6.3-13H45.6l-6.1 13H24.4L58 20Zm0 23.3-6.9 15.3h13.8L58 43.3Z"/>
+    <text x="108" y="73" font-family="Avenir Next, Avenir, Segoe UI, Helvetica, Arial, sans-serif" font-size="35" font-weight="800" letter-spacing="-1.2">apparentex</text>
+  </g>
+</svg>
