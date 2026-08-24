@@ -314,9 +314,9 @@ h3{font-size:1.04rem}
 .web-development-performance-section{padding:56px 0}
 .web-development-performance-section h3{font-size:32px}
 .web-development-integration-section{padding:56px 0}
-.web-development-integration-section h3{font-size:32px}
-.web-development-integration-section .integration-intro{max-width:920px;margin:18px auto 0}
-.web-development-integration-section .integration-lead{margin:22px 0 18px;color:var(--ink);font-weight:700}
+.web-development-integration-section h3{font-size:32px;text-align:left}
+.web-development-integration-section .integration-intro{max-width:920px;margin:18px 0 0;text-align:left}
+.web-development-integration-section .integration-lead{margin:22px 0 18px;color:var(--ink);font-weight:700;text-align:left}
 .web-development-integration-section .row>div{display:flex}
 .web-development-integration-section .p-3{display:grid;align-content:start;gap:10px;width:100%;text-align:left;border:1px solid var(--line);border-radius:12px;background:#fff}
 .web-development-integration-section .p-3 span{position:relative;padding-left:20px;color:var(--ink)}
@@ -338,6 +338,8 @@ h3{font-size:1.04rem}
 .web-development-industries-section .card:hover{border-color:var(--orange);background:var(--orange);transform:translateY(-2px)}
 .web-development-industries-section .card:hover .card-text{color:#fff;transform:translateY(-4px)}
 .web-development-industries-section+.why-section{padding-top:56px}
+.web-development-why-section h3{font-size:32px}
+.web-development-why-section .why-grid article:last-child{grid-column:auto}
 .service-detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .client-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .client-story-grid article{min-height:184px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 34px rgba(9,36,77,.04)}
