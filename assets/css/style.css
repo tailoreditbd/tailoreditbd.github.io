@@ -322,7 +322,22 @@ h3{font-size:1.04rem}
 .web-development-integration-section .p-3 span{position:relative;padding-left:20px;color:var(--ink)}
 .web-development-integration-section .p-3 span:before{content:"";position:absolute;left:0;top:.58em;width:7px;height:7px;border-radius:50%;background:var(--orange)}
 .web-development-integration-section .btn{margin-top:32px}
-.web-development-integration-section+.why-section{padding-top:56px}
+.web-development-process-table-section{padding:56px 0}
+.web-development-process-table-section h3{font-size:32px}
+.web-development-process-table-section .process-table-intro{max-width:850px;margin-top:18px}
+.web-development-process-table-section .table-responsive{margin-top:28px}
+.web-development-process-table-section .process-table{min-width:840px;table-layout:fixed}
+.web-development-process-table-section .process-table td{width:33.333%;color:var(--ink);background:#fff}
+.web-development-process-table-section .process-table p{margin:0;color:var(--muted)}
+.web-development-process-table-section .btn{display:table;margin:32px auto 0}
+.web-development-industries-section{padding:56px 0}
+.web-development-industries-section h3{font-size:32px}
+.web-development-industries-section .industries-intro{max-width:920px;margin:18px 0 28px}
+.web-development-industries-section .card{border-color:var(--line);box-shadow:0 8px 24px rgba(9,36,77,.04);transition:background-color .2s ease,border-color .2s ease,transform .2s ease}
+.web-development-industries-section .card-text{margin:0;color:var(--ink);transition:color .2s ease,transform .2s ease}
+.web-development-industries-section .card:hover{border-color:var(--orange);background:var(--orange);transform:translateY(-2px)}
+.web-development-industries-section .card:hover .card-text{color:#fff;transform:translateY(-4px)}
+.web-development-industries-section+.why-section{padding-top:56px}
 .service-detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .client-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .client-story-grid article{min-height:184px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 34px rgba(9,36,77,.04)}
