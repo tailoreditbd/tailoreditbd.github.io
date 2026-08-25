@@ -325,10 +325,9 @@ h3{font-size:1.04rem}
 .web-development-process-table-section{padding:56px 0}
 .web-development-process-table-section h3{font-size:32px}
 .web-development-process-table-section .process-table-intro{max-width:850px;margin-top:18px}
-.web-development-process-table-section .table-responsive{margin-top:28px}
-.web-development-process-table-section .process-table{min-width:840px;table-layout:fixed}
-.web-development-process-table-section .process-table td{width:33.333%;color:var(--ink);background:#fff}
-.web-development-process-table-section .process-table p{margin:0;color:var(--muted)}
+.web-development-process-table-section .process-card-grid{margin-top:28px}
+.web-development-process-table-section .process-card-grid .card{color:var(--ink);border-color:var(--line);border-radius:12px;box-shadow:0 8px 24px rgba(9,36,77,.04)}
+.web-development-process-table-section .process-card-grid p{margin:0;color:var(--muted)}
 .web-development-process-table-section .btn{display:table;margin:32px auto 0}
 .web-development-industries-section{padding:56px 0}
 .web-development-industries-section h3{font-size:32px}
