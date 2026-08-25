@@ -339,6 +339,16 @@ h3{font-size:1.04rem}
 .web-development-industries-section+.why-section{padding-top:56px}
 .web-development-why-section h3{font-size:32px}
 .web-development-why-section .why-grid article:last-child{grid-column:auto}
+.digital-marketing-process-section .process-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+.digital-marketing-process-section .process-list article{height:100%}
+.digital-marketing-process-section .section-title>h3{font-size:32px}
+.digital-marketing-process-section .process-list .process-step-title{margin-bottom:8px;color:var(--ink);font-weight:800}
+.digital-marketing-process-section .process-list p{margin:0;color:var(--muted)}
+.digital-marketing-industries-list-section{padding-bottom:12px}
+.digital-marketing-market-section{padding-top:12px}
+.digital-marketing-market-section .process-card-grid .card-body>p+p{margin-top:18px}
+.digital-marketing-market-section .feature-list{margin-top:12px}
+.digital-marketing-success-section .industries-intro+.industries-intro{margin-top:-12px}
 .service-detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .client-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .client-story-grid article{min-height:184px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 34px rgba(9,36,77,.04)}
@@ -388,6 +398,7 @@ h3{font-size:1.04rem}
   .web-development-hero{padding:64px 0 36px}
   .web-development-services-section{padding:40px 0 48px}
   .web-development-solutions-section{padding:48px 0 56px}
+  .digital-marketing-process-section .process-list{grid-template-columns:1fr}
 }
 @media (max-width:380px){
   .navbar-brand img{width:min(136px,100%)}
