@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Tailored IT BD logo</title>
+  <desc id="desc">Geometric T shaped Tailored IT BD mark in navy and orange.</desc>
+  <rect width="512" height="512" fill="#fff"/>
+  <g fill-rule="evenodd" clip-rule="evenodd">
+    <path fill="#020181" d="M198.4 157.6h195.2l-27.3 39.6H171.1l27.3-39.6z"/>
+    <path fill="#020181" d="M278.1 205h51.2l-94.5 149.7-18-54.4L278.1 205z"/>
+    <path fill="#F65C16" d="M208.6 205h51.7L190 308.9h-13.1v-36.7h-10.5L208.6 205z"/>
+    <path fill="#F65C16" d="M181.4 276.6h10.2v10.2h-10.2z"/>
+    <path fill="#F65C16" d="M181.4 292.1h10.2v10.2h-10.2z"/>
+    <path fill="#F65C16" d="M166 286.4h10.8v10.8H166z"/>
+    <path fill="#F65C16" d="M155.7 300.8h9.2v9.2h-9.2z"/>
+    <path fill="#F65C16" d="M169.7 312.8h9.2v9.2h-9.2z"/>
+  </g>
+</svg>
