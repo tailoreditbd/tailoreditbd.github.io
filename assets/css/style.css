@@ -51,7 +51,7 @@ h3{font-size:1.04rem}
 .navbar button.nav-link{background:none;border:0;text-align:left}
 .services-mega-menu{width:100%;padding:28px;border:1px solid var(--line);border-top:3px solid var(--orange);border-radius:14px;box-shadow:var(--shadow);margin-top:12px}
 .services-mega-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
-.services-mega-category h2{font-size:.9rem;line-height:1.5;font-weight:800;margin:0 0 12px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.services-mega-title{display:block;font-size:14px;line-height:1.5;font-weight:800;color:var(--navy);margin:0 0 12px;padding-bottom:12px;border-bottom:1px solid var(--line)}
 .services-mega-menu .dropdown-item{padding:8px 10px;margin-left:-10px;border-radius:6px;white-space:normal;font-size:.8rem;line-height:1.5;color:#43516a}
 .services-mega-menu .dropdown-item:hover,.services-mega-menu .dropdown-item:focus{background:#fff3eb;color:var(--orange-2)}
 .services-mega-menu .service-unlinked{color:var(--muted);cursor:default}
