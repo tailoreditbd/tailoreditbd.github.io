@@ -20,7 +20,7 @@
   window.addEventListener('scroll', onScroll, {passive:true});
   onScroll();
 
-  navLinks.forEach(link => {
+  document.querySelectorAll('.navbar .nav-link, .services-mega-menu .dropdown-item').forEach(link => {
     link.addEventListener('click', () => {
       if(link.classList.contains('dropdown-toggle')){
         return;

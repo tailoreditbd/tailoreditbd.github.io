@@ -42,6 +42,24 @@ h3{font-size:1.04rem}
 .navbar .nav-link:hover,.navbar .nav-link.active{color:var(--orange)}
 .navbar-toggler{border:0;flex:0 0 auto;margin-left:auto}
 .navbar-toggler:focus{box-shadow:0 0 0 .16rem rgba(255,106,26,.18)}
+.navbar>.container{position:relative}
+.navbar .services-dropdown{position:static}
+.navbar button.nav-link{background:none;border:0;text-align:left}
+.services-mega-menu{width:100%;padding:28px;border:1px solid var(--line);border-top:3px solid var(--orange);border-radius:14px;box-shadow:var(--shadow);margin-top:12px}
+.services-mega-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.services-mega-category h2{font-size:.9rem;line-height:1.5;font-weight:800;margin:0 0 12px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.services-mega-menu .dropdown-item{padding:8px 10px;margin-left:-10px;border-radius:6px;white-space:normal;font-size:.8rem;line-height:1.5;color:#43516a}
+.services-mega-menu .dropdown-item:hover,.services-mega-menu .dropdown-item:focus{background:#fff3eb;color:var(--orange-2)}
+.services-mega-menu .service-unlinked{color:var(--muted);cursor:default}
+.services-mega-menu .service-unlinked:hover{background:transparent;color:var(--muted)}
+.services-mega-menu .dropdown-item:focus-visible,.navbar button.nav-link:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+@media(min-width:992px){.navbar .services-mega-menu{left:0;right:0;top:100%}}
+@media(max-width:991.98px){
+  .navbar-collapse{max-height:calc(100dvh - 100px);overflow-y:auto}
+  .services-mega-menu{padding:18px;margin:8px 0 14px;box-shadow:none}
+  .services-mega-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+}
+@media(max-width:575.98px){.services-mega-grid{grid-template-columns:1fr}}
 
 .btn{border-radius:999px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;padding:.76rem 1.24rem;font-size:.88rem}
 .btn-sm{padding:.58rem 1rem;font-size:.76rem}
